@@ -31,8 +31,4 @@ header{
 .footer-links{
     background-color: var(--color-header-footer);
     padding: 10px;
-    display: flex;
-    
 }
-
-
