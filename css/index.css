@@ -1,0 +1,92 @@
+.top-content .account-links {
+  transform: translateY(5px);
+}
+
+/* Palabra "cuenta" al lado del iconito */
+.top-content .cuenta {
+  transform: translate(-25px, -2px);
+}
+
+.account-icon {
+  max-height: 20px;
+}
+
+.search-bar {
+  transform: translateX(-7px);
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.navbar-toggler {
+  max-width: 40px;
+  margin-right: 5px;
+  border: 2px solid black;
+  text-align: left;
+}
+
+.navbar-toggler-icon{
+  background-color: none;
+  transform: translateX(-7px);
+}
+
+
+#catalogo img {
+  max-width: 221px;
+  box-shadow: 10px 5px 5px rgba(216, 216, 216, 0.6);
+}
+
+.book-container {
+  margin: auto;
+  width: 221px;
+  height: 350px;
+}
+
+.catalog-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-container .item-container {
+  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .catalog-container {
+    max-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  .catalog-container .item-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+
+.copyright p{
+  transform: translateY(10px);
+}
+
+/* links a redes sociales abajo */
+.copyright a{
+  background-color: none;
+  
+}
+
