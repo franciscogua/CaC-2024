@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.navbar-nav{
-    text-align: right;
+:root{
+    --font: "Montserrat", sans-serif;
+    --color-font: black;
+    --color-background-body: #cbd9ce;
+    --color-header-footer:#83ad8d;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    color: var(--color-font) ;
+    font-family: var(--font);
+    background-color:var(--color-background-body);
+}
+
+header{
+    background-color: var(--color-header-footer);
+}
+
+.navbar img{
+    width: 40px;
+}
+
+.navbar a {
+    margin-right: 15px;
+}
+.footer-links{
+    background-color: var(--color-header-footer);
+    padding: 10px;
+    display: flex;
+    
+}
+
 
