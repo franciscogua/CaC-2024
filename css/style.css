@@ -37,7 +37,7 @@
 
 .account-icon {
   max-height: 20px;
-  transform: translate(15px)
+  transform: translate(15px);
 }
 
 .search-bar {
@@ -78,6 +78,12 @@ header {
   transform: translateX(-2.5px);
 }
 
+.video-container {
+  background-image: url(../images/backgrounds/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100em;
+}
+
 #catalogo img {
   max-width: 221px;
   box-shadow: 10px 5px 5px rgba(216, 216, 216, 0.6);
@@ -102,6 +108,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  .video-container {
+    background: none;
+  }
   .catalog-container {
     max-height: 600px;
     display: flex;
