@@ -79,9 +79,10 @@ header {
 }
 
 .video-container {
-  background-image: url(../images/backgrounds/background1.jpg);
+  background-color: black;
+  /* background-image: url(../images/backgrounds/background1.jpg);
   background-repeat: no-repeat;
-  background-size: 100em;
+  background-size: 100em; */
 }
 
 #catalogo img {
