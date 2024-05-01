@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --font: "Montserrat", sans-serif;
+  --font: "Monserrat", sans-serif;
   --color-font: black;
   --color-background-body: #cbd9ce;
   --color-header: #83ad8d;
