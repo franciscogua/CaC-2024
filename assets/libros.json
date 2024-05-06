@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "titulo": "H!STÉRICA",
+        "genero": "Poesía",
+        "URL_portada": "./images/libros/portada-libro7.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "CERROJO",
+        "genero": "Poesía",
+        "URL_portada": "./images/libros/portada-libro8.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "SILENCIO",
+        "genero": "Poesía",
+        "URL_portada": "./images/libros/portada-libro11.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "LUZ Y FUERZA",
+        "genero": "Poesía",
+        "URL_portada": "./images/libros/portada-libro10.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "REALIDARK",
+        "genero": "Poesía",
+        "URL_portada": "./images/libros/portada-libro9.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "La lógica de lo perecedero",
+        "genero": "Plaqueta",
+        "URL_portada": "./images/libros/portada-libro2.jpg"
+    },
+    {
+        "id": 7,
+        "titulo": "Ojas",
+        "genero": "Plaqueta",
+        "URL_portada": "./images/libros/portada-libro3.jpg"
+    },
+    {
+        "id": 8,
+        "titulo": "Polvareda",
+        "genero": "Plaqueta",
+        "URL_portada": "./images/libros/portada-libro5.jpg"
+    }
+]
