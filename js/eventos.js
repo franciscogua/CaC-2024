@@ -25,8 +25,6 @@ const eventos = [
   },
 ];
 
-const eventosContainer = document.getElementById("eventos-container");
-
 function monthToString(month) {
   const monthNames = [
     "Ene",
@@ -44,8 +42,27 @@ function monthToString(month) {
   ];
   return monthNames[month];
 }
+const eventosContainer = document.getElementById("eventos-container");
 
-eventos.forEach((item) => {
+fetch("./eventos.json")
+  .then((datos) => {
+    if (!datos.ok) {
+      throw new Error("Error al traer los datos");
+    } else {
+      return datos.json();
+    }
+  })
+  .then((eventos) => {
+    eventos.eventos.forEach((evento) => {
+      mostrarLosEventos(evento); // Ensure this matches the function name
+    });
+    console.log("fetch eventos ok");
+  })
+  .catch((e) => {
+    console.error("Hubo un error al operar con fetch " + e.message);
+  });
+
+const mostrarLosEventos = (item) => {
   const itemContainer = document.createElement("div");
   itemContainer.classList.add("col-md-4");
   itemContainer.classList.add("on-hover");
@@ -75,11 +92,13 @@ eventos.forEach((item) => {
     "flex-row"
   );
 
+  const fecha = new Date(item.fecha);
+
   const fechaMes = document.createElement("span");
-  fechaMes.textContent = monthToString(item.fecha.getMonth());
+  fechaMes.textContent = monthToString(fecha.getMonth());
 
   const fechaDia = document.createElement("span");
-  fechaDia.textContent = item.fecha.getDate() + 1;
+  fechaDia.textContent = fecha.getDate() + 1;
   fechaDia.classList.add("d-block", "mx-1");
 
   const titulo = document.createElement("h5");
@@ -105,4 +124,6 @@ eventos.forEach((item) => {
   titulo.appendChild(titleLink);
   cardContainer.appendChild(descripcion);
   eventosContainer.appendChild(itemContainer);
-});
+};
+
+// eventos.forEach((item) => {});
