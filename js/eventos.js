@@ -1,30 +1,3 @@
-const eventos = [
-  {
-    id: 1,
-    fecha: new Date("2019-08-21"),
-    titulo: "Ciclo Monserrat edición invierno",
-    URL_imagen: "./images/eventos/evento2.webp",
-    descripcion:
-      "¡Volvemos a hacer el ciclo en CABA! 🍝 Ciclo de invierno al calor del mediodía en @lanuovapiazza 📖 Nos acompañarán con sus lecturas @andinachon @juanefegarcia el colectivo @notandistintes_ y nuestras autoras @lauraalejandrabravo y @e1000cef",
-  },
-  {
-    id: 2,
-    fecha: new Date("2019-09-25"),
-    titulo: "Ciclo de lectura",
-    URL_imagen: "./images/eventos/evento1.webp",
-    descripcion:
-      "Este domingo volvemos a #CABA y una de lxs poetas que nos acompañaran es @andinachon 🎤 Andi Nachon, Profesora de letras, poeta y guionista.",
-  },
-  {
-    id: 3,
-    fecha: new Date("2019-10-04"),
-    titulo: "Encuentro de poetas",
-    URL_imagen: "./images/eventos/evento3.webp",
-    descripcion:
-      "#CicloMonserrat en @lanuovapiazza junto a @andinachon @juanefegarcia y @notandistintes_",
-  },
-];
-
 function monthToString(month) {
   const monthNames = [
     "Ene",
@@ -125,5 +98,3 @@ const mostrarLosEventos = (item) => {
   cardContainer.appendChild(descripcion);
   eventosContainer.appendChild(itemContainer);
 };
-
-// eventos.forEach((item) => {});
